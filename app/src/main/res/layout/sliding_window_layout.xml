@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lowerRelativeLayout"
+    android:background="@color/colorPrimaryDark">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divider"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/blurText"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/cadr_back"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/blurfavourite"
+        android:layout_below="@id/blurText"
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/ic_baseline_favorite"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/blurFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blurText"
+        android:text="Radio One"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="98.3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/smallFmTitle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smallFmFreq"
+        android:text="Radio One"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/smallFmTitle"
+        android:textColor="@color/text1"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/closeWindow"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_close_24"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/playPause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        android:layout_toEndOf="@id/smallFmTitle"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

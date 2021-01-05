@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sliding_layout"
+        android:layout_marginBottom="62dp"
+        android:gravity="bottom"
+        app:umanoPanelHeight="68dp"
+        app:umanoShadowHeight="4dp"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/upperRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popular"
+                android:text="@string/popular"
+                android:textSize="20sp"
+                android:textColor="@color/text1"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" />
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_recyclerView"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/popular"
+                app:msrv_gravity="start"
+                android:layout_gravity="center_vertical"
+                app:msrv_interval="2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/madeforyou"
+                android:text="@string/made_for_you"
+                android:layout_below="@id/first_recyclerView"
+                android:textSize="20sp"
+                android:textColor="@color/text1"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp" />
+
+            <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_recyclerView"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/madeforyou"
+                app:msrv_gravity="start"
+                android:layout_gravity="center_vertical"
+                app:msrv_interval="2"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/sliding_window_layout"/>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</FrameLayout>

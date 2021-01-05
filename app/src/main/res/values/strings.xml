@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RadioApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular">Popular</string>
+    <string name="made_for_you">Made for you</string>
+
+    <string name="firstFm">Big FM</string>
+    <string name="firstFmF">92.3</string>
+
+    <string name="SecondFm">Red FM</string>
+    <string name="SecondFmF">93.5</string>
+
+    <string name="ThirdFm">Radio One</string>
+    <string name="ThirdFmF">94.3</string>
+
+    <string name="FourFm">Radio Mirchi</string>
+    <string name="FourFmF">98.3</string>
+
+    <string name="fiveFm">Hit FM</string>
+    <string name="fiveFmF">95.0</string>
+
+    <string name="sixFm">MY FM</string>
+    <string name="sixFmF">95.3</string>
+
+    <string name="sevenFm">Radio City</string>
+    <string name="sevenFmF">91.1</string>
+
+</resources>
